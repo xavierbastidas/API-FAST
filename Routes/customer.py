@@ -11,6 +11,4 @@ async def customers():
 async def customers():
     data=pandas.read_sql(queries["get_customers"],connection)
     return data.to_dict("records")
-
-
-           
+     
