@@ -1,4 +1,4 @@
-from  fastapi import FastAPI
+from  fastapi import FastAPI 
 from fastapi.middleware.cors import CORSMiddleware
 from Routes import customer , product
 origins = [
@@ -17,6 +17,7 @@ print("http://127.0.0.1:8000")
 @app.get("/")
 async def root():
   return {"message":"Hi wordl"}
+
 
 
 
